@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="py-8 md:p-8">
+    <!-- header section started -->
+    <header>
+        <!-- navbar started -->
+        <nav class="flex justify-between items-center bg-sky-200 md:p-10 p-2 rounded-lg mb-10">
+            <div>
+                <h2 class="text-5xl font-medium">Interactive</h2>
+                <h4 class="text-3xl text-gray-600">Geometry Genius</h4>
+            </div>
+            <div>
+                
+                <a href="blog.html" target="_blank"><button class="bg-sky-600 text-white px-9 py-2 rounded-lg">Blog</button></a>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main section started -->
+
+    <main>
+        <section class="flex flex-col md:flex-row gap-6">
+            <!-- all the six carts -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:w-[65%]">
+                <!-- triangle cart -->
+                <div id="triangle-cart" class="p-6 text-center border rounded-lg mb-6">
+                    <img class="mb-10 h-44 mx-auto" src="images/triangle.png" alt="">
+                    <h3 id="triangle-title" class="font-medium text-xl mb-2">Triangle</h3>
+                    <p class="mb-3">Area (A) =0.5 X b X h</p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="triangle-base" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="b">
+                        <p>cm</p>
+                        <input id="triangle-height" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button id="triangle-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <!-- rectangle cart -->
+                
+                <div id="rectangle-cart" class="p-6 text-center border rounded-lg mb-6">
+                    <img class="mb-10 h-44 mx-auto" src="images/rectangle.png" alt="">
+                    <h3 id="rectangle-title" class="font-medium text-xl mb-2">Rectangle</h3>
+                    <p class="mb-3">Area (A) =w X l</p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="rectangle-width" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="w">
+                        <p>cm</p>
+                        <input id="rectangle-length" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="l">
+                        <p>cm</p>
+                    </div>
+                    <button id="rectangle-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <!-- parallelogram cart -->
+                <div id="parallelogram-cart" class="p-6 text-center border rounded-lg mb-6">
+                    <img class="mb-10 h-44 mx-auto" src="images/parallelogram.png" alt="">
+                    <h3 id="parallelogram-title" class="font-medium text-xl mb-2">Parallelogram</h3>
+                    <p class="mb-3">Area (A) = b X h</p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="parallelogram-base" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="b">
+                        <p>cm</p>
+                        <input id="parallelogram-height" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                    <button id="parallelogram-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <!-- rhombus cart -->
+                <div id="rhombus-cart" class="p-6 text-center border rounded-lg">
+                    <img class="mb-10 h-44 mx-auto" src="images/rhombus.png" alt="">
+                    <h3 id="rhombus-title" class="font-medium text-xl mb-2">Rhombus</h3>
+                    <p class="mb-3">Area (A) =0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="rhombus-diagonal-one" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="d1">
+                        <p>cm</p>
+                        <input id="rhombus-diagonal-two" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="d2">
+                        <p>cm</p>
+                    </div>
+                    <button id="rhombus-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <!-- pentagon cart -->
+                <div id="pentagon-cart" class="p-6 text-center border rounded-lg">
+                    <img class="mb-10 h-44 mx-auto" src="images/pentagon.png" alt="">
+                    <h3 id="pentagon-title" class="font-medium text-xl mb-2">Pentagon</h3>
+                    <p class="mb-3">Area (A) =0.5 X p X b</p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="pentagon-side-one" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="p">
+                        <p>cm</p>
+                        <input id="pentagon-side-two" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="b">
+                        <p>cm</p>
+                    </div>
+                    <button id="pentagon-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <!-- ellipse cart -->
+                
+                <div id="ellipse-cart" class="p-6 text-center border rounded-lg">
+                    <img class="mb-10 h-44 mx-auto" src="images/ellipse.png" alt="">
+                    <h3 id="ellipse-title" class="font-medium text-xl mb-2">Ellipse</h3>
+                    <p class="mb-3">Area (A) = πab</p>
+                    <div class="flex gap-2 mb-10">
+                        <input id="ellipse-side-one" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="a">
+                        <p>cm</p>
+                        <input id="ellipse-side-two" class="bg-slate-200 px-2 w-1/4 mx-auto" type="text" placeholder="b">
+                        <p>cm</p>
+                    </div>
+                    <button id="ellipse-calculate" class="w-full bg-sky-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </div>
+            </div>
+            <!-- area calculation cart -->
+            <div class="lg:p-2 text-center border rounded-lg md:w-[30%]">
+                <h3 class="text-xl font-medium text-center underline mb-5">Area Calculation</h3>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <tbody id="area-table">
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- js link added -->
+
+    <script src="js/utilities.js"></script>
+    <script src="js/area.js"></script>
+</body>
+
+</html>

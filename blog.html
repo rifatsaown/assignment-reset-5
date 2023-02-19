@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="p-10 w-3/4 mx-auto">
+        <!-- Question-1 -->
+        <h1 class="text-3xl font-medium p-5 bg-sky-500 rounded-lg">1. What is DOM and what is the purpose of DOM?</h1>
+        <p class="text-xl bg-sky-100 p-10 rounded-lg"><span class="font-medium">Answer: </span>DOM full form is Document Object Model. It is use as a web documents for programming interface. <br> A model of the web page is created in memory when a web page is loaded in a web browser. This model is called Document Object Model or DOM. It shows the web page as a well-organized collection of things that JavaScript may be used to change and interact with. <br> The DOM was created to give web developers a tool to dynamically access and change a web page's content and structure without having to reload the entire page. Developers can add, remove, or change items on the page, react to user activities, and produce dynamic effects and animations by modifying the DOM.</p>
+
+        <!-- Question-2 -->
+        <h1 class="text-3xl font-medium p-5 bg-sky-500 rounded-lg">2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+        <p class="text-xl bg-sky-100 p-10 rounded-lg"><span class="font-medium">Answer: </span>There are many methods we can use to select HTML elements using DOM based on their tag name, class, ID, or other attributes. <br> Here are a few common DOM techniques for choosing HTML elements: <br> 1. <span class="font-medium">document.getElementById()</span> - selects an element based on its ID attribute. <br> 2. <span class="font-medium">document.getElementsByClassName()</span> - method chooses all elements that belong to the given class. <br>3. <span class="font-medium">document.getElementsByTagName()</span> - method chooses every element that matches a given tag name. <br>4. <span class="font-medium">document.querySelector()</span> - function chooses the first element that matches to a given CSS selector. <br>5. <span class="font-medium">document.querySelectorAll()</span> - function selects all elements that match to a given CSS selector.</p>
+
+        <!-- Question-3 -->
+        <h1 class="text-3xl font-medium p-5 bg-sky-500 rounded-lg">3. What is event bubble?</h1>
+        <p class="text-xl bg-sky-100 p-10 rounded-lg"><span class="font-medium">Answer: </span>The Document Object Model (DOM) uses an event bubbling method in which an event that is created on a child element bubbles up through its parent elements in the DOM structure until it reaches the root element. <br>Suppose, you have a button element inside a section, and you click the button, the click event will first be triggered on the button element. Then, the event will bubble up to the section element, and any event listeners inside the section will also be triggered. <br>This happens because events in the DOM are processed in two phases: the capturing phase and the bubbling phase. During the capturing phase, the event is first processed at the topmost element in the DOM hierarchy and then moves down to the target element. During the bubbling phase, the event moves from the target element back up through its parent elements. <br>Because it enables you to manage events on various DOM levels using a single event listener attached to a parent element, event bubbling can be helpful. If you don't handle it carefully, it could also result in unintended consequences, such as repeatedly triggering events or causing unexpected behavior.</p>
+
+        <!-- Question-4 -->
+        <h1 class="text-3xl font-medium p-5 bg-sky-500 rounded-lg">4.  What is a callback function and why will you use it?</h1>
+        <p class="text-xl bg-sky-100 p-10 rounded-lg"><span class="font-medium">Answer: </span>A callback function is a function that is called later after being passed as an argument to another function. A callback function's main function is to let you pass parameter to another function as data so that it can be executed as needed. <br>Callbacks are frequently used in asynchronous programming, when an operation's result is not immediately available and the program needs to wait for the result to become available before continuing. A callback function can be passed to an asynchronous function in this situation, and the callback will be executed after the operation is finished, with the result being passed as an argument. <br>For example, the setTimeout() function in JavaScript is an asynchronous function that accepts two arguments: a time delay and a callback function. The callback function is called when the delay is finished.</p>
+
+    </section>
+</body>
+</html>
